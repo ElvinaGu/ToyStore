@@ -1,5 +1,7 @@
 package src;
 
+import src.lottery.PrizeDraw;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,11 +37,13 @@ public class ToyStore {
         if (!prizeToy.isEmpty()) {
             Toy prize = prizeToy.remove(0);
             prize.setQuantity(prize.getQuantity() - 1);
+            String str = prize.toString();
 
             try {
                 FileWriter wr = new FileWriter(prizeFile, true);
-                wr.write(prizeFile + "\n");
-                wr.close();
+                wr.write(str);
+                wr.append('\n');
+                wr.flush();
             } catch (IOException e) {
                 System.out.println("Возникли неполадки при записи данных в файл.");
             }

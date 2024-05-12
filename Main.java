@@ -4,8 +4,6 @@ import src.impl.Educational;
 import src.impl.Musical;
 import src.impl.Soft;
 
-
-
 public class Main {
     public static void main(String[] args) {
 

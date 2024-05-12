@@ -1,4 +1,6 @@
-package src;
+package src.lottery;
+
+import src.Toy;
 
 import java.util.List;
 
