@@ -1,0 +1,2 @@
+toy = Плюшевый медведь, weight = 2.0, quantity = 3
+toy = Саксофон, weight = 0.18, quantity = 2
