@@ -1,3 +1,4 @@
+import src.Toy;
 import src.ToyStore;
 import src.impl.Educational;
 import src.impl.Musical;
@@ -24,6 +25,14 @@ public class Main {
         assortment.addToy(cube);
         assortment.addToy(designer);
 
+        assortment.showToys();
+
+        assortment.toyForLottery();
+
+        Toy prize = assortment.getPrize();
+        if (prize != null){
+            System.out.println("Призовая игрушка: " + prize.getName());
+        }
         assortment.showToys();
     }
 }
